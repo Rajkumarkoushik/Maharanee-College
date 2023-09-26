@@ -1,0 +1,472 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--second-color-);
+}
+a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--secondary-color-);
+    position: relative;
+}
+li{
+    list-style: none;
+}
+p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #aaa8a8;
+    text-align: justify;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+:root{
+    --main-color- : #E0AFDA;
+    --second-color- : #137E0E;
+    --secondary-color- : #DD050A;
+    --transition- : all 0.4s ease-in-out;
+}
+/* 
+1. Header section.
+2. Navigation section.
+3. Marquee section.
+4. Banner section.
+5. About section.
+6. Staff table section.
+7. Admission form section.
+8. Our Recruiters section.
+9. Footer section.
+10. Back to top section.
+11. Preloader section.
+*/
+
+/* =========   1. Header section starts.========== */
+
+.header-main{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-color-);
+    padding: 5px 3rem;
+}
+.header-main i{
+    font-size: 16px;
+    color: var(--second-color-);
+    margin: 0px 5px;
+}
+.header-main i:hover{
+    color: var(--secondary-color-);
+}
+.header-address{
+    gap: 30px;
+}
+
+/* =========   1. Header section ends.========== */
+
+/* =========   2. Navigation section Starts.========== */
+
+.navigation-main{
+    background-color: var(--second-color-);
+    padding: 5px 3rem;
+}
+.nav-logo img{
+    width: 100%;
+    height: 50px;
+}
+.nav-links{
+    display: flex;
+    gap: 30px;
+}
+.nav-links li a{
+    color: var(--main-color-);
+}
+.nav-links li a:hover{
+    color: var(--secondary-color-);
+}
+.nav-hamburger span{
+    width: 40px;
+    height: 5px;
+    background-color: #000;
+    display: block;
+    border-radius: 10px;
+    margin: 5px 0px;
+}
+.nav-hamburger{
+    display: none;
+}
+.nav-button button{
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid var(--main-color-);
+    background-color: var(--secondary-color-);
+    color: var(--main-color-);
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px var(--main-color-);
+    cursor: pointer;
+    transition: var(--transition-);
+}
+.nav-button button:hover{
+    background-color: transparent;
+    transition: var(--transition-);
+}
+.nav-course{
+    position: relative;
+}
+.nav-course-links{
+    position: absolute;
+    background-color: #fff;
+    width: 150px;
+    z-index: +1;
+    transform: scale(0);
+    transition: var(--transition-);
+}
+.nav-course-links li{
+    padding: 10px 20px;
+}
+.nav-course-links li:hover{
+    background-color: var(--second-color-);
+}
+.nav-inter{
+    position: relative;
+}
+.nav-inter-links{
+    position: absolute;
+    background-color: #fff;
+    width: 150px;
+    z-index: +1;
+    left: 150px;
+    transform: scale(0);
+    transition: var(--transition-);
+}
+.nav-inter:hover .nav-inter-links , .nav-course:hover .nav-course-links{
+    transform: scale(1);
+    transition: var(--transition-);
+}
+.nav-admission{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: +99;
+    transform: translateY(-100%);
+    transition: var(--transition-);
+}
+.nav-admission-active{
+    transform: translateY(0%);
+    transition: var(--transition-);
+}
+.admission-form-section i{
+    font-size: 20px;
+    position: absolute;
+    right: 10%;
+    padding: 10px 13px;
+    background: var(--main-color-);
+    border-radius: 50%;
+    color: var(--second-color-);
+    box-shadow: 0px 0px 5px 0px;
+    cursor: pointer;
+}
+
+/* =========   2. Navigation section Ends.========== */
+
+/* =========   3. Marquee section Starts.========== */
+
+.marquee-scroll marquee{
+   font-size: 14px;
+   font-weight: 600;
+   padding: 5px 0px;
+   color: var(--second-color-);
+}
+
+/* =========   3. Marquee section Ends.========== */
+
+/* =========   4. Banner section Starts.========== */
+
+.banner-main img{
+    width: 100%;
+    height: 100vh;
+}
+
+/* =========   4. Banner section Ends.========== */
+
+/* =========   5. About section Starts.========== */
+
+.about-main{
+    padding: 3rem;
+    gap: 3rem;
+}
+.about-main img{
+    width: auto;
+    height: 450px;
+}
+.whychoose-image img{
+    height: 300px;
+    border-radius: 30px;
+}
+.about-heading{
+    position: relative;
+    padding-bottom: 2rem;
+}
+.head-span{
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--main-color-);
+}
+.head-span::after{
+    content: "";
+    width: 10px;
+    height: 3px;
+    background-color: var(--second-color-);
+    position: absolute;
+    left: 0%;
+    animation: move 1s infinite linear;
+    -webkit-animation: move 1s infinite linear;
+}
+@keyframes move {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(90px);
+    }
+}
+@-webkit-keyframes move {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(90px);
+    }
+}
+
+/* =========   5. About section Ends.========== */
+
+/* =========   6. Staff table section Starts.========== */
+
+.staff-table{
+    padding: 3rem;
+}
+th,td,table{
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+th{
+    color: var(--main-color-);
+    font-size: 14px;
+    font-weight: 600;
+    background: var(--second-color-);
+}
+td{
+    border: 1px solid #fff;
+    background-color: var(--main-color-);
+}
+td:hover{
+    background-color: var(--secondary-color-);
+    color: var(--main-color-);
+}
+.table-main{
+    width: 100%;
+    box-shadow: 0px 0px 5px 0px;
+    border-radius: 10px;
+}
+
+/* =========   6. Staff table section Ends.========== */
+
+/* =========   7. Admission Form section Starts.========== */
+
+.admission-form-main{
+    background-color: var(--main-color-);
+}
+.admission-form-section{
+    padding: 3rem;
+}
+.admission-input label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #797474;
+}
+.admission-input input, .admission-select{
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #a29f9f;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid var(--second-color-);
+    margin-bottom: 10px;
+}
+.admission-input input:focus{
+    border: 1px solid var(--secondary-color-);
+}
+.form-inputs{
+    display: flex;
+    gap: 50px;
+}
+.admission-form{
+    margin: 0 auto;
+    width: fit-content ;
+}
+.admission-btn button{
+    margin: 2rem auto;
+    display: block;
+}
+.admission-btn button:hover{
+    color: var(--second-color-);
+    box-shadow: 0px 0px 5px 0px;
+}
+
+/* =========   7. Admission Form section Ends.========== */
+
+/* =========   8.  Our Recruiters section Starts.========== */
+
+.recruiters-main{
+    padding: 3rem;
+    overflow: hidden;
+}
+.recruiters-section{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    animation: moving 10s linear infinite;
+}
+.recruiters-section img{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    box-shadow: 0px 0px 4px 0px;
+}
+@keyframes moving {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+/* =========   8.  Our Recruiters section Ends.========== */
+
+/* =========   9.  Footer section Starts.========== */
+
+.footer-main{
+    background-color: var(--second-color-);
+}
+.footer-section{
+    padding: 3rem;
+}
+.footer-logo img{
+    height: 50px;
+}
+.copy-right p{
+    text-align: center;
+    padding: 10px 0px;
+}
+.footer-main  a{
+    color: var(--main-color-);
+}
+.footer-main  a:hover{
+    color: var(--secondary-color-);
+}
+.footer-medialinks i{
+    font-size: 16px;
+    margin: 0px 5px;
+}
+
+/* =========   9.  Footer section Ends.========== */
+
+/* =========   10.  Back to top section Starts.========== */
+
+.back-to-top a{
+    padding: 5px 10px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px 0px;
+    background-color: var(--second-color-);
+}
+.back-to-top{
+    transform: scale(0);
+    transition: var(--transition-);
+    position: fixed;
+    left: 20px;
+    bottom: 30px;
+    z-index: +20;
+}
+.back-to-top-active{
+    transform: scale(1);
+    transition: var(--transition-);
+}
+
+/* =========   10.  Back to top section Ends.========== */
+
+/* =========   11.  preloader section Starts.========== */
+
+.preloader{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+.preloader-active{
+    display: none;
+}
+.preloader span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid var(--main-color-);
+    border-top: 3px solid var(--second-color-);
+    border-radius: 50%;
+    padding: 2rem;
+    animation: round 0.4s linear infinite;
+    -webkit-animation: round 0.4s linear infinite;
+}
+@keyframes round{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes round{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* =========   11.  preloader section Ends.========== */

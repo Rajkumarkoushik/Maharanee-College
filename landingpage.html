@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
+    <title>MR COLLEGE</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="/assets/images/page-logo.jpg"
+      type="image/x-icon"
+    />
+    <!-- Style sheet Link -->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/images/page-logo.png" type="image/x-icon">
+    <!-- Font awesome icons cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Google font poppins link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ==================================================================== 
+                            Header  section Starts.
+    ========================================================================= -->
+
+    <header>
+      <section class="header-main">
+        <div class="flex header-address">
+          <div>
+            <a href="https://maps.app.goo.gl/tWtog3as73xHY8iH9"
+              ><i class="fa-solid fa-location-dot"></i
+            ></a>
+            <a href="https://maps.app.goo.gl/tWtog3as73xHY8iH9"
+              >MR, College, Peddapuram</a
+            >
+          </div>
+          <div>
+            <a href="tel: +91 654789 84657"
+              ><i class="fa-solid fa-phone"></i
+            ></a>
+            <a href="tel: +91 654789 84657">+91 654789 84657</a>
+          </div>
+        </div>
+        <div class="header-medialinks">
+          <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://instagram.com"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://facebook.com"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://linkedin.com"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </section>
+    </header>
+
+    <!-- ==================================================================== 
+                            Header section ends.
+    ========================================================================= -->
+
+    <!-- ==================================================================== 
+                            Navigation section Starts.
+    ========================================================================= -->
+
+    <nav>
+      <section class="navigation-main flex">
+        <div class="nav-logo">
+          <a href="index.html"
+            ><img src="/assets/images/page-logo.png" alt="page logo"
+          /></a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li class="nav-course">
+            <a href="">Courses</a>
+            <ul class="nav-course-links">
+              <li class="nav-inter">
+                <a href="">Inter</a>
+                <ul class="nav-inter-links">
+                  <li><a href="">MPC</a></li>
+                  <li><a href="">BIPC</a></li>
+                  <li><a href="">CEC</a></li>
+                  <li><a href="">HEC</a></li>
+                </ul>
+              </li>
+              <li class="nav-inter">
+                <a href="">Degree</a>
+                <ul class="nav-inter-links">
+                  <li><a href="">BSC</a></li>
+                  <li><a href="">BCA</a></li>
+                  <li><a href="">B.COM</a></li>
+                  <li><a href="">BA</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="">Staff</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <div class="nav-button">
+          <button onclick="navigationButton()">Admission</button>
+        </div>
+        <div class="nav-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+    </nav>
+
+    <!-- ==================================================================== 
+                            Navigation section ends.
+    ========================================================================= -->
+
+        <!-- ==================================================================== 
+                            Navigation Admission section Starts.
+    ========================================================================= -->
+
+    <section class="admission-form-main nav-admission">
+      <div class="admission-form-section">
+        <i class="fa-solid fa-xmark" onclick="navigationButton()"></i>
+        <h2 class="text-center">Apply For Admission</h2>
+        <form action="" method="" class="admission-form">
+          <div class="admission-input">
+            <img src="" alt="" />
+            <input type="file" />
+          </div>
+          <div class="form-inputs">
+            <div class="admission-input">
+              <label for="">First Name</label> <br />
+              <input type="text" placeholder="Your First Name" required />
+            </div>
+            <div class="admission-input">
+              <label for="">Last Name</label> <br />
+              <input type="text" placeholder="Your Last Name" required />
+            </div>
+          </div>
+          <div class="form-inputs">
+            <div class="admission-input">
+              <label for="">Phone</label> <br />
+              <input type="text" placeholder="+91 XXXXXXXXXX" required />
+            </div>
+            <div class="admission-input" >
+              <label for="">Email</label> <br />
+              <input type="text" placeholder="Your Mail" required />
+            </div>
+          </div>
+          <div class="form-inputs">
+            <h4>Gender :-</h4>
+            <div>
+              <label for="">Male</label> <br />
+              <input type="Radio" required  name="gender"/>
+            </div>
+            <div>
+              <label for="">Female</label> <br />
+              <input type="radio" required name="gender" />
+            </div>
+            <div>
+              <label for="">Others</label> <br />
+              <input type="radio" required name="gender"/>
+            </div>
+          </div>
+          <div class="form-inputs">
+            <div class="admission-input">
+              <label for="">City</label> <br />
+              <input type="text" placeholder="Your City" required />
+            </div>
+            <div class="admission-input">
+              <label for="">State</label> <br />
+              <input type="text" placeholder="Your State" required />
+            </div>
+          </div>
+          <div class="form-inputs"> 
+              <select name="" id="" class="admission-select">
+                <option value="" selected disabled>Select Your Course</option>
+                <option value="">Intermediate</option>
+                <option value="">Degree</option>
+              </select>
+              <select name="" id="" class="admission-select">
+                <option value="" selected disabled>Select Your Branch</option>
+                <option value="">Bsc Chemistry</option>
+                <option value="">Bsc Computers</option>
+                <option value="">Bca</option>
+                <option value="">B.Com</option>
+                <option value="">BA</option>
+                <option value="">MPC</option>
+                <option value="">BIPC</option>
+                <option value="">ECE</option>
+                <option value="">CEC</option>
+              </select>
+          </div>
+          <div class="nav-button admission-btn">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ==================================================================== 
+                            Navigation Admission section ends.
+    ========================================================================= -->
+
+    <!-- ==================================================================== 
+                            Marquee section ends.
+    ========================================================================= -->
+
+    <section class="marquee-scroll">
+      <marquee behavior="" direction=""
+        >2023 - 2024 Admissions are open enroll now.</marquee
+      >
+    </section>
+
+    <!-- ==================================================================== 
+                            Marquee section ends.
+    ========================================================================= -->
+
+    <!-- ==================================================================== 
+                            Banner section Starts.
+    ========================================================================= -->
+
+    <section class="banner-main">
+      <img src="/assets/images/banner-image.jpg" alt="Banner image" />
+    </section>
+
+    <!-- ==================================================================== 
+                            Banner section ends.
+    ========================================================================= -->
+
+    <!-- ==================================================================== 
+                            About Us section Starts.
+    ========================================================================= -->
+
+    <section class="about-main flex">
+      <div>
+        <img src="/assets/images/about-image.jpg" alt="about image" />
+      </div>
+      <div>
+        <div class="about-heading">
+          <h2>About Maharanee College</h2>
+          <span class="head-span"></span>
+        </div>
+        <p>
+          S.R.V.B.S.J.B.Maharanee College Association, Peddapuram was started in
+          the year 1967 to commemorate the philanthropy of the great Maharanee
+          of Peddapuram samsthanam in response to a long felt need to start a
+          college in this area. Sri.S.B.P.B.K.Satyanarayana Rao garu the then
+          chairman of zilla parishad, East Godavari district took initiative in
+          this direction and it is due to his pioneering zeal, that
+          S.R.V.B.S.J.B.M.R.College came into existence in 1967. S.R.V.B.S.J.B.
+          Maharanee College Association is running two colleges namely
+          S.R.V.B.S.J.B.Maharanee College & S.R.V.B.S.J.B.Maharanee College Of
+          Physical Education
+        </p> <br>
+        <p>
+          Sri S.B.P.B.K .SATYANARAYANA RAO garu is the first and founder
+          president of the management committee. At present the college
+          management committee consists of....
+        </p>
+        <a href="">Read More</a>
+      </div>
+    </section>
+
+    <!-- ==================================================================== 
+                            About Us section ends.
+    ========================================================================= -->
+
+    <!-- ==================================================================== 
+                            Why Choose section Starts.
+    ========================================================================= -->
+
+    <section class="about-main flex">
+      <div>
+        <div class="about-heading">
+          <h2>Why Choose Maharanee College</h2>
+          <span class="head-span"></span>
+        </div>
+        <span></span>
+        <p>
+          S.R.V.B.S.J.B.Maharanee College Association, Peddapuram was started in
+          the year 1967 to commemorate the philanthropy of the great Maharanee
+          of Peddapuram samsthanam in response to a long felt need to start a
+          college in this area.
+        </p> <br>
+        <p>
+          S.R.V.B.S.J.B.Maharanee College Association, Peddapuram was started in
+          the year 1967 to commemorate the philanthropy of the great Maharanee
+          of Peddapuram samsthanam in response to a long felt need to start a
+          college in this area.
+        </p>
+        <a href="">Read More</a>
+      </div>
+      <div class="whychoose-image">
+        <img src="/assets/images/why-choose-image.jpg" alt="why choose image" />
+      </div>
+    </section>
+
+    <!-- ==================================================================== 
+                            Why Choose section ends.
+    ========================================================================= -->
+
+    <!-- ==================================================================== 
+                            Our Staff section Starts.
+    ========================================================================= -->
+
+    <section class="staff-table">
+      <div class="about-heading">
+        <h2>Our Well Trained Staff.</h2>
+        <span class="head-span"></span>
+      </div>
+      <table class="table-main">
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>NAME</th>
+            <th>GENDER</th>
+            <th>DESIGNATION</th>
+            <th>QUALIFICATION</th>
+            <th>SUBJECT</th>
+            <th>EXPERIENCE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>k.Srinivas</td>
+            <td>Male</td>
+            <td>Professor</td>
+            <td>Msc Maths</td>
+            <td>Maths</td>
+            <td>12 Years</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>m.Sri Devi</td>
+            <td>Female</td>
+            <td>Professor</td>
+            <td>Msc Chemistry</td>
+            <td>Chemistry</td>
+            <td>10 Years</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>l.Lingam</td>
+            <td>Male</td>
+            <td>Asst.Professor</td>
+            <td>MBA</td>
+            <td>Computers</td>
+            <td>2 Years</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>G.kamala</td>
+            <td>Female</td>
+            <td>Asst.Professor</td>
+            <td>Msc Physics</td>
+            <td>Physics</td>
+            <td>9 Years</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>K.Rama Rao</td>
+            <td>Male</td>
+            <td>HOD</td>
+            <td>Msc Commerce</td>
+            <td>Commerce</td>
+            <td>15 Years</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>N. Naga Raju</td>
+            <td>Male</td>
+            <td>Professor</td>
+            <td>MCA</td>
+            <td>Computers</td>
+            <td>7 Years</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>M.Rani</td>
+            <td>Female</td>
+            <td>Asst.Professor</td>
+            <td>PHD</td>
+            <td>Psychology</td>
+            <td>16 Years</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>A. Ali</td>
+            <td>Male</td>
+            <td>Principle</td>
+            <td>Msc Maths</td>
+            <td>Maths</td>
+            <td>20 Years</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>H. Haritha</td>
+            <td>Female</td>
+            <td>Professor</td>
+            <td>M.Tech</td>
+            <td>Computers</td>
+            <td>16 Years</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>T. Anusha</td>
+            <td>Female</td>
+            <td>Professor</td>
+            <td>MA English</td>
+            <td>English</td>
+            <td>11 Years</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ==================================================================== 
+                            Our Staff section ends.
+    ========================================================================= -->
+
+    <!-- ==================================================================== 
+                            Admission section Starts.
+    ========================================================================= -->
+
+    <section class="admission-form-main">
+      <div class="admission-form-section">
+          <h2 class="text-center">Apply For Admission</h2>
+        <form action="" method="" class="admission-form">
+          <div class="admission-input">
+            <img src="" alt="" />
+            <input type="file" />
+          </div>
+          <div class="form-inputs">
+            <div class="admission-input">
+              <label for="">First Name</label> <br />
+              <input type="text" placeholder="Your First Name" required />
+            </div>
+            <div class="admission-input">
+              <label for="">Last Name</label> <br />
+              <input type="text" placeholder="Your Last Name" required />
+            </div>
+          </div>
+          <div class="form-inputs">
+            <div class="admission-input">
+              <label for="">Phone</label> <br />
+              <input type="text" placeholder="+91 XXXXXXXXXX" required />
+            </div>
+            <div class="admission-input" >
+              <label for="">Email</label> <br />
+              <input type="text" placeholder="Your Mail" required />
+            </div>
+          </div>
+          <div class="form-inputs">
+            <h4>Gender :-</h4>
+            <div>
+              <label for="">Male</label> <br />
+              <input type="Radio" required  name="gender"/>
+            </div>
+            <div>
+              <label for="">Female</label> <br />
+              <input type="radio" required name="gender" />
+            </div>
+            <div>
+              <label for="">Others</label> <br />
+              <input type="radio" required name="gender"/>
+            </div>
+          </div>
+          <div class="form-inputs">
+            <div class="admission-input">
+              <label for="">City</label> <br />
+              <input type="text" placeholder="Your City" required />
+            </div>
+            <div class="admission-input">
+              <label for="">State</label> <br />
+              <input type="text" placeholder="Your State" required />
+            </div>
+          </div>
+          <div class="form-inputs"> 
+              <select name="" id="" class="admission-select">
+                <option value="" selected disabled>Select Your Course</option>
+                <option value="">Intermediate</option>
+                <option value="">Degree</option>
+              </select>
+              <select name="" id="" class="admission-select">
+                <option value="" selected disabled>Select Your Branch</option>
+                <option value="">Bsc Chemistry</option>
+                <option value="">Bsc Computers</option>
+                <option value="">Bca</option>
+                <option value="">B.Com</option>
+                <option value="">BA</option>
+                <option value="">MPC</option>
+                <option value="">BIPC</option>
+                <option value="">ECE</option>
+                <option value="">CEC</option>
+              </select>
+          </div>
+          <div class="nav-button admission-btn">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ==================================================================== 
+                            Admission section ends.
+    ========================================================================= -->
+
+    <!-- ==================================================================== 
+                            Our Recruiters section ends.
+    ========================================================================= -->
+
+    <section class="recruiters-main">
+      <div class="about-heading">
+        <h2>Our Recruiters</h2>
+        <span class="head-span"></span>
+      </div>
+      <div class="recruiters-section">
+        <img src="/assets/recruiters-images/accenture.avif" alt="Accenture" />
+        <img src="/assets/recruiters-images/amazon.png" alt="Amazon" />
+        <img src="/assets/recruiters-images/capgemini.png" alt="Capgemini" />
+        <img src="/assets/recruiters-images/ibm.webp" alt="IBM" />
+        <img src="/assets/recruiters-images/infosys.png" alt="Infosys" />
+        <img
+          src="/assets/recruiters-images/people-tech-media.png"
+          alt="People Tech Media"
+        />
+        <img src="/assets/recruiters-images/tcs.png" alt="TCS" />
+        <img
+          src="/assets/recruiters-images/tech-mahindra.png"
+          alt="Tech Mahindra"
+        />
+        <img src="/assets/recruiters-images/Cognizant.png" alt="Cognizant" />
+        <img src="/assets/recruiters-images/Genpact.jpg" alt="Genpact" />
+        <img src="/assets/recruiters-images/virtusa.webp" alt="Virtusa" />
+        <img src="/assets/recruiters-images/syntel.jpg" alt="Syntel" />
+      </div>
+    </section>
+
+    <!-- ==================================================================== 
+                            Our Recruiters section ends.
+    ========================================================================= -->
+
+    <!-- ==================================================================== 
+                            Footer section Starts.
+    ========================================================================= -->
+
+    <footer class="footer-main">
+      <section class="footer-section flex">
+        <div class="footer-logo">
+          <img src="/assets/images/page-logo.png" alt="Page logo" />
+          <p>
+            <a href="https://maps.app.goo.gl/tWtog3as73xHY8iH9"
+              >Address: Samarlakota, Road, <br />
+              Peddapuram, Andhra Pradesh 533437</a
+            >
+          </p>
+        </div>
+        <div>
+          <h4>Use Full Links</h4>
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Staff</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Blogs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="">Privacy & Policy</a></li>
+            <li><a href="">Legal Information</a></li>
+            <li><a href="">Terms & Services</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get In Touch</h4>
+          <div class="">
+            <a href="tel: +91 654789 84657"
+              ><i class="fa-solid fa-phone"></i
+            ></a>
+            <a href="tel: +91 654789 84657">+91 654789 84657</a>
+          </div>
+          <div>
+            <a href="mailto: maharaneecollege@gmail.com"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            <a href="mailto: maharaneecollege@gmail.com"
+              >maharaneecollege@gmail.com</a
+            >
+          </div>
+          <div class="footer-medialinks">
+            <a href="https://twitter.com"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://instagram.com"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://facebook.com"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://linkedin.com"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- ==================================================================== 
+                            Footer section ends.
+    ========================================================================= -->
+
+    <!-- ==================================================================== 
+                            Copy Right section Starts.
+    ========================================================================= -->
+
+    <section class="copy-right">
+      <p>
+        Copyrights &copy 2023, All rights reserved by Maharanee College.
+      </p>
+    </section>
+    <!-- ==================================================================== 
+                            Copy Right  section ends.
+    ========================================================================= -->
+
+    <!-- ==================================================================== 
+                            Back to top  section Starts.
+    ========================================================================= -->
+    <section class="back-to-top">
+      <a href="#"><i class="fa-solid fa-angles-up"></i></a>
+    </section>
+    <!-- ==================================================================== 
+                            Back to top  section ends.
+    ========================================================================= -->
+
+    <!-- ==================================================================== 
+                            Preloader  section Starts.
+    ========================================================================= -->
+    <section class="preloader">
+      <span></span>
+    </section>
+    <!-- ==================================================================== 
+                           Preloader  section ends.
+    ========================================================================= -->
+
+    <!-- js link -->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
